@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ESP32 Network Sniffer</string>
+    <string name="connect">Connect</string>
+    <string name="back">Back</string>
+    <string name="filters">Filters</string>
+    <string name="packet_type">Packet Type</string>
+    <string name="channel">Channel</string>
+    <string name="rssi">RSSI</string>
+    <string name="ssid">SSID</string>
+    <string name="mac_address">MAC Address</string>
+    <string name="statistics">Statistics</string>
+</resources> 

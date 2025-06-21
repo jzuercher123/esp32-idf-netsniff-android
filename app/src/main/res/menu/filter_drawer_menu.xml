@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/filter_packet_type"
+            android:title="Packet Type"/>
+        <item
+            android:id="@+id/filter_channel"
+            android:title="Channel"/>
+        <item
+            android:id="@+id/filter_rssi"
+            android:title="RSSI"/>
+        <item
+            android:id="@+id/filter_ssid"
+            android:title="SSID"/>
+        <item
+            android:id="@+id/filter_mac"
+            android:title="MAC Address"/>
+    </group>
+</menu> 
