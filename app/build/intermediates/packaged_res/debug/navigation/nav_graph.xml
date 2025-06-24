@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/deviceScanFragment">
+
+    <fragment
+        android:id="@+id/deviceScanFragment"
+        android:name="com.example.esp32netsniffer.ui.DeviceScanFragment"
+        android:label="Device Scan">
+        <action
+            android:id="@+id/action_deviceScan_to_packetList"
+            app:destination="@id/packetListFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/packetListFragment"
+        android:name="com.example.esp32netsniffer.ui.PacketListFragment"
+        android:label="Packet List">
+        <action
+            android:id="@+id/action_packetList_to_packetDetail"
+            app:destination="@id/packetDetailFragment"/>
+        <action
+            android:id="@+id/action_packetList_to_stats"
+            app:destination="@id/statsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/packetDetailFragment"
+        android:name="com.example.esp32netsniffer.ui.PacketDetailFragment"
+        android:label="Packet Detail">
+        <action
+            android:id="@+id/action_packetDetail_to_packetList"
+            app:destination="@id/packetListFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.example.esp32netsniffer.ui.StatsFragment"
+        android:label="Statistics">
+        <action
+            android:id="@+id/action_stats_to_packetList"
+            app:destination="@id/packetListFragment"/>
+    </fragment>
+
+</navigation> 
